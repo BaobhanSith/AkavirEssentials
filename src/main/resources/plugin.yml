@@ -1,0 +1,25 @@
+name: AkavirEssentials
+version: '${project.version}'
+main: me.albaenchantress.akaviressentials.AkavirEssentials
+api-version: '1.19'
+authors: [ AlbaEnchantress ]
+description: A handy plugin for adding potion effects to foods!
+commands:
+  addEffect:
+    description: Adds a potion effect and duration to a food item.
+    aliases:
+      - createFood
+      - potionFood
+    usage: /<command> [ABSORPTION|BAD_OMEN|BLINDNESS|CONDUIT_POWER|CONFUSION|DAMAGE_RESISTANCE|DARKNESS|DOLPHINS_GRACE|FAST_DIGGING|FIRE_RESISTANCE|GLOWING|HARM|HEAL|HEALTH_BOOST|HERO_OF_THE_VILLAGE|HUNGER|INCREASE_DAMAGE|INVISIBILITY|JUMP|LEVITATION|LUCK|NIGHT_VISION|POISON|REGENERATION|SATURATION|SLOW|SLOW_DIGGING|SLOW_FALLING|SPEED|UNLUCK|WATER_BREATHING|WEAKNESS|WITHER] [duration]
+  giveWallet:
+    description: Gives the specified player a wallet.
+    aliases:
+      - createWallet
+    usage: /<command> [Player]
+permissions:
+  potionfoods.create:
+    description: Allows the creation of PotionFoods
+    default: op
+  akaconomy.admin:
+    description: Allows admin commands to be performed
+    default: op
